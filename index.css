@@ -1,0 +1,174 @@
+html {
+	font-family: 'Raleway', serif;
+	font-style: normal;
+	letter-spacing: 0.02em;
+}
+
+.header-top {
+	background-color: #FFFFFF;
+	display:  flex;
+  	justify-content: flex-start;
+}
+
+.logo {
+	font-size: 38px;
+	line-height: 60px;
+	font-weight: 900;
+	color: #30427E;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.header-top_soc-media {
+	display: flex;
+	width:  33%;
+	justify-content: flex-end;
+}
+
+.header-top_viber,
+.header-top_telegram {
+	margin-right:  15px;
+	margin-top: 20px;
+	margin-bottom:  20px;
+}
+
+.header-top_phone {
+	color: #363636;
+	display: flex;
+	width: 18%;
+	flex-direction: column;
+}
+
+.header-top_phone-number {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	padding:  0;
+	line-height: 100%;
+}
+
+.country-code {
+	font-weight: 700;
+}
+
+.header-top_callback {
+	font-size: 15px;
+	text-decoration-line: underline;
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+}
+
+.callback-link {
+	color: #363636;
+}
+
+.header-top_contact {
+	background-color: #21D1A0;
+	width: 25%;
+	display:  flex;
+	cursor:pointer;
+}
+
+.header-top_contact-img-block {
+	width: 35%;
+	display:  flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.header-top_contact-text {
+	width: 65%;
+	display:  flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.header {
+	background: url('img/cars.png') no-repeat 103% 100%, url('img/lines.png') no-repeat 100% 100%, url('img/percent.png') no-repeat 87% 33%;
+	background-color: #30427E;
+	height:  800px;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.header-content {
+	padding-top:  10%;
+	margin-left: 10%;
+}
+
+.header-title {
+	font-size: 68px;
+	font-weight: 400;
+}
+
+.head-offer {
+	font-size: 30px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.header-text {
+	display:  flex;
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: 35px;
+}
+
+.header-text-1 {
+	margin-right: 50px;
+}
+
+.header-button {
+	color: #FFFFFF;
+	background-color: #21D1A0;
+	border-radius: 5px;
+	border: none;
+	width: 435px;
+	height: 70px;
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 20px;
+	cursor:pointer;
+}
+
+.header-slider {
+	margin-top:  50px;
+	width:  600px;
+	display:  flex;
+}
+
+
+.scroll-bottom {
+	position: absolute;
+	bottom: -47px;
+	left: 47%;
+	width: 130px;
+	height: 130px;
+	background: #30427E;
+	border-radius: 50%;
+	border: none;
+	cursor:pointer;
+}
+
+
+.scroll-bottom::after {
+	content: url('img/arrow-left.png');
+	position:  absolute;
+	width:  7px;
+	height: 14px;
+	bottom:  30px;
+	left:  50%;
+	margin-left: -12px;
+}
