@@ -95,12 +95,18 @@ html {
 	font-size: 20px;
 }
 
+.main-header {
+	position:  relative;
+}
+
 .header {
 	background: url('img/cars.png') no-repeat 103% 100%, url('img/lines.png') no-repeat 100% 100%, url('img/percent.png') no-repeat 87% 33%;
 	background-color: #30427E;
 	height:  800px;
 	color: #FFFFFF;
-	position: relative;
+	width: 100%;
+	position:  relative;
+	min-width:  100%;
 }
 
 .header-content {
@@ -113,7 +119,7 @@ html {
 	font-weight: 400;
 }
 
-.head-offer {
+.header-offer {
 	font-size: 30px;
 	margin-top: 10px;
 	font-weight: 400;
@@ -143,16 +149,54 @@ html {
 	cursor:pointer;
 }
 
+.header-button:hover {
+	box-shadow: 0 0 30px #21D1A0;
+}
+
 .header-slider {
 	margin-top:  50px;
-	width:  600px;
+	width:  200px;
+	height:  20px;
 	display:  flex;
+	align-items: center;
 }
+
+
+.header-arrow-left,
+.header-arrow-right {
+	cursor: pointer;
+}
+
+.header-arrow-right {
+	transform: rotate(180deg);
+	margin-bottom: 12px;
+	margin-left: 25px;
+}
+
+.header-arrow-right:hover .header-arrow-img path {
+	fill: #21D1A0;
+}
+
+.header-arrow-left:hover .header-arrow-img path {
+	fill: #21D1A0;
+}
+
 
 
 .scroll-bottom {
 	position: absolute;
-	bottom: -47px;
+	left: 47%;
+	bottom: -7%;
+	width: 130px;
+	height: 130px;
+	background: #30427E;
+	border-radius: 50%;
+	border: none;
+	cursor:pointer;
+}
+
+.scroll-bottom {
+	position: absolute;
 	left: 47%;
 	width: 130px;
 	height: 130px;
@@ -172,3 +216,220 @@ html {
 	left:  50%;
 	margin-left: -12px;
 }
+
+
+.header-page2 {
+	background: url('img/lexus.png') no-repeat 82% 90%, url('img/lines2.png') no-repeat 100% 90%, url('img/percent2.png') no-repeat 87% 27%;
+	background-color: #30427E;
+	height:  800px;
+	color: #FFFFFF;
+}
+
+
+.header-carousel {
+	width:  100%;
+	overflow: hidden;
+}
+
+.header-inner-carousel {
+	display: flex;
+	transform: translate(0);
+	transition: transform 0.3s;
+}
+
+.header-arrow {
+	background: none;
+	border: none;
+}
+
+.header-inner-carousel-moved {
+	transform: translate(-100%)
+}
+
+.calc-title {
+	display:  flex;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.calc-title_callback {
+	width: 168px;
+	height: 168px;
+	margin-right: 46px;
+	margin-top:  50px;
+	margin-bottom: 30px;
+}
+
+.calc-title_item1 {
+	width:  50%;
+	color: rgba(55, 63, 81, 0.28);
+	display:  flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.calc-title_item2 {
+	width: 40%;
+	color: #373F51;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.calc-section {
+	height: 900px;
+	background: url('img/map_car.png') no-repeat -8% 40%;
+}
+
+.calc-leasing {
+	width: 695px;
+	height: 832px;
+	font-family: Montserrat;
+	background-color: #30427E;
+	border-radius: 15px;
+	margin-left: 51%;
+	position:  relative;
+	display:  flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.calc-leasing:before {
+	content: url('img/key.png');
+	width: 161px;
+	height: 138px;
+	position:  absolute;
+	top: 25px;
+	left: -70px;
+}
+
+.calc-leasing_item {
+	width:  435px;
+	height:  80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
