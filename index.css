@@ -136,7 +136,7 @@ html {
 	margin-right: 50px;
 }
 
-.header-button {
+.button {
 	color: #FFFFFF;
 	background-color: #21D1A0;
 	border-radius: 5px;
@@ -149,7 +149,7 @@ html {
 	cursor:pointer;
 }
 
-.header-button:hover {
+.button:hover {
 	box-shadow: 0 0 30px #21D1A0;
 }
 
@@ -233,8 +233,9 @@ html {
 
 .header-inner-carousel {
 	display: flex;
-	transform: translate(0);
+	transform: translateX(0);
 	transition: transform 0.3s;
+	will-change: transform;
 }
 
 .header-arrow {
@@ -243,7 +244,7 @@ html {
 }
 
 .header-inner-carousel-moved {
-	transform: translate(-100%)
+	transform: translateX(-100%)
 }
 
 .calc-title {
@@ -469,11 +470,31 @@ left: 20px;
 	line-height: 30px;
 }
 
+.question-section {
+	height:  470px;
+	margin-top:  50px;
+	background: url('img/women.png') no-repeat 63.5% 100%, url('img/prokat.png') no-repeat 100% 60%;
+	background-color: #F6F6F6;
+	display:  flex;
+	align-items: center;
+}
 
 
+.question-section-info {
+	margin-left: 8%;
+	width: 40%;
+}
 
+.question-section-title {
+	font-size: 50px;
+	font-weight: bold;
+	color: #373F51;
+}
 
-
+.question-section-text {
+	font-size: 30px;
+	color: #6F7174;
+}
 
 
 
