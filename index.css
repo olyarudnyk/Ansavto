@@ -313,6 +313,209 @@ html {
 	height:  80px;
 }
 
+.calc-slider-btn {
+	background: none;
+	border:  none;
+	cursor: pointer;
+	color: inherit;
+}
+
+.calc-slider-btn1:hover {
+	color: #373F51;
+}
+
+.advantages {
+	display: flex;
+	justify-content:  center;
+	font-weight: bold;
+	font-size: 40px;
+	color: #373F51;
+	margin-top:  100px;
+	margin-bottom: 100px;
+}
+
+
+.advantages-row-img {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 270px;
+	padding-right:  260px;
+	margin-top:  50px;	
+}
+
+.advantages-img-box {
+	width: 405px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.advantages-img {
+	width: 97px;
+	height: 94px;
+	background: #30427E;
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	position:  relative;
+	cursor: pointer;
+}
+
+.advantages-img:hover {
+	background-color: #21D1A0;
+}
+
+.advantages-img-1::before {
+content: url('img/advantages/advantage1.png');
+width: 45px;
+height: 50px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.advantages-img-2::before {
+content: url('img/advantages/advantage2.png');
+width: 48px;
+height: 48px;
+position: absolute;
+top: 23px;
+left: 23px;
+}
+
+.advantages-img-3::before {
+content: url('img/advantages/advantage3.png');
+width: 40px;
+height: 53px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.advantages-img-4::before {
+content: url('img/advantages/advantage4.png');
+width: 54px;
+height: 50px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.advantages-img-5::before {
+content: url('img/advantages/advantage5.png');
+width: 48px;
+height: 57px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+
+.advantages-img-6::before {
+content: url('img/advantages/advantage6.png');
+width: 50px;
+height: 44px;
+position: absolute;
+top: 15px;
+left: 20px;
+}
+
+
+
+.advantages-img-7::before {
+content: url('img/advantages/advantage7.png');
+width: 56px;
+height: 56px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+
+
+.advantages-img-8::before {
+content: url('img/advantages/advantage8.png');
+width: 49px;
+height: 47px;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+
+
+.advantages-img-9::before {
+	content: url('img/advantages/advantage9.png');
+	width: 45px;
+	height: 55px;
+	position: absolute;
+	top: 17px;
+	left: 20px;
+}
+
+
+.advantages-row-text {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 270px;
+	padding-right:  260px;
+	font-size: 25px;
+	color: #373F51;
+	margin-top: 20px;
+}
+
+.advantages-text-box {
+	text-align: center;
+	width: 405px;
+	line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
