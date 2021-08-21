@@ -614,7 +614,7 @@ left: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 33px;
+	margin-top: 32px;
 	padding-left: 30px;
 	padding-top: 37px;
 	padding-bottom: 37px;
@@ -654,15 +654,39 @@ left: 20px;
 	width: 100%;
 }
 
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
 
+.footer-bottom-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.footer-soc-media {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+}
 
+.footer-bottom-content {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+}
 
-
-
-
-
-
+.footer-bottom-text {
+	width: 40%;
+	display:  flex;
+	align-items:  center;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 18px;
+	color: #373F51;
+}
 
 
 
