@@ -462,6 +462,11 @@ left: 20px;
 	font-size: 25px;
 	color: #373F51;
 	margin-top: 20px;
+	margin-bottom:  100px;
+}
+
+.advantages-row-text:last-child {
+	margin-bottom: 0;
 }
 
 .advantages-text-box {
@@ -471,8 +476,8 @@ left: 20px;
 }
 
 .question-section {
-	height:  470px;
-	margin-top:  50px;
+	height:  427px;
+	margin-top:  170px;
 	background: url('img/women.png') no-repeat 63.5% 100%, url('img/prokat.png') no-repeat 100% 60%;
 	background-color: #F6F6F6;
 	display:  flex;
@@ -496,11 +501,36 @@ left: 20px;
 	color: #6F7174;
 }
 
+.scheme-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 90px;
+	color: #373F51;
+	line-height: 142px;
+	height: 142px;
+}
 
 
+.work-scheme {
+	color: #373F51;
+	width:  75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.work-scheme-row {
+	display:  grid;
+	grid-gap: 80px;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 25px;
+	margin-top: 70px;
+}
 
 
-
+.scheme-text {
+	margin-top: 20px;
+}
 
 
 
