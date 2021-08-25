@@ -9,6 +9,7 @@ html {
 	display:  flex;
   	justify-content: flex-start;
   	height: 80px;
+  	min-height: 100%;
 }
 
 .logo {
@@ -257,9 +258,11 @@ html {
 
 .calc-title {
 	display:  flex;
-	font-weight: bold;
 	font-size: 40px;
-	height: 255px;
+	padding: 30px 0;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 @keyframes blinkButton {
@@ -306,70 +309,189 @@ html {
 	border-radius: 100%
 }
 
-.calc-title_item1 {
-	width:  50%;
-	color: rgba(55, 63, 81, 0.28);
-	display:  flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-top: 50px;
-}
-
-.calc-title_item2 {
-	width: 40%;
-	color: #373F51;
-	display:  flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 50px;
-}
-
 
 .calc-section {
-	height: 900px;
 	background: url('img/map_car.png') no-repeat -8% 40%;
 }
 
 .calc-leasing {
-	width: 695px;
-	height: 832px;
+	width: 36.6%;
+	height: 92.5%;
 	font-family: Montserrat;
 	background-color: #30427E;
 	border-radius: 15px;
 	margin-left: 51%;
 	position:  relative;
-	display:  flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 	font-weight: 500;
 	font-size: 18px;
 	color: #FFFFFF;
+	padding-left: 129px;
+	padding-right: 129px;
+	margin-bottom: 100px;
+	display: none;
+}
+
+.calc-leasing.active {
+	display: block;
+}
+
+
+.calc-leasing_container {
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding-bottom: 55px;
+	padding-top: 55px;	
 }
 
 .calc-leasing:before {
 	content: url('img/key.png');
 	width: 161px;
-	height: 138px;
 	position:  absolute;
 	top: 25px;
 	left: -70px;
 }
 
-.calc-leasing_item {
-	width:  435px;
-	height:  80px;
+.calc-leasing_input {
+	width:  100%;
+	position:  relative;
+	margin-bottom: 30px;
+}
+
+.input-price-value {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+
+.calc-leasing_input input {
+	width: 100%;
+	height: 70px;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 18px;
+	color: #B5C2C5;
+	padding-left: 20px;
+	margin-top: 5px;
+}
+
+
+.calc-leasing__result {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+
+.calc-leasing__result-value{
+	color: #21D1A0;
+	font-weight: 900;
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.calc-leasing__result-value2 {
+	color: #FFFFFF;
+}
+
+.calc-leasing__result-label {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.calc-input-container {
+	width: 100%;
+	position: relative;
+}
+
+.input-range {
+	width: 100%;
+	height: 7px;
+	position: absolute;
+	bottom: 0%;
+	display: flex;
+}
+
+.input-range-left {
+	width: 30%;
+	height: 100%;
+	background-color: #21D1A0;
+	border-bottom-left-radius: 5px;
+}
+
+
+.input-range-right {
+	width: 70%;
+	height: 100%;
+	background-color: #C4C4C4;
+	border-bottom-right-radius: 5px;
+}
+
+
+.calc-leasing_input2 .input-range-left {
+	width: 15%;	
+}
+
+.calc-leasing_input2 .input-range-right {
+	width: 85%;	
+}
+
+
+.calc-leasing_input2 .input-range-circle {
+	left: 14%;	
+}
+
+.input-range-circle {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 5px solid #21D1A0;
+	background: #FFFFFF;
+	position: absolute;
+	left: 29%;
+	bottom: -70%;
+	cursor: pointer;
+}
+
+.calc-button {
+	width: 100%;
+}
+
+.calc-leasing_bottom {
+	width: 100%;
+}
+
+.calc-leasing_bottom-text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 45px;
+	letter-spacing: 0.06em;
 }
 
 .calc-slider-btn {
 	background: none;
 	border:  none;
 	cursor: pointer;
-	color: inherit;
+	color: rgba(55, 63, 81, 0.28);
+	padding-top: 50px;
+	font-weight: bold;
 }
 
-.calc-slider-btn1:hover {
+.calc-slider-btn:hover, 
+.calc-slider-btn.active  {
 	color: #373F51;
+}
+
+.advantages-container {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .advantages {
@@ -386,8 +508,6 @@ html {
 .advantages-row-img {
 	display: flex;
 	justify-content: space-around;
-	padding-left: 270px;
-	padding-right:  260px;
 	margin-top:  50px;	
 }
 
@@ -399,113 +519,30 @@ html {
 
 
 .advantages-img {
-	width: 97px;
+	width: 94px;
 	height: 94px;
 	background: #30427E;
 	border: 1px solid #FFFFFF;
 	border-radius: 10px;
 	position:  relative;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .advantages-img:hover {
 	background-color: #21D1A0;
 }
 
-.advantages-img-1::before {
-content: url('img/advantages/advantage1.png');
-width: 45px;
-height: 50px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-.advantages-img-2::before {
-content: url('img/advantages/advantage2.png');
-width: 48px;
-height: 48px;
-position: absolute;
-top: 23px;
-left: 23px;
-}
-
-.advantages-img-3::before {
-content: url('img/advantages/advantage3.png');
-width: 40px;
-height: 53px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-.advantages-img-4::before {
-content: url('img/advantages/advantage4.png');
-width: 54px;
-height: 50px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-.advantages-img-5::before {
-content: url('img/advantages/advantage5.png');
-width: 48px;
-height: 57px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-
-.advantages-img-6::before {
-content: url('img/advantages/advantage6.png');
-width: 50px;
-height: 44px;
-position: absolute;
-top: 15px;
-left: 20px;
-}
-
-
-
-.advantages-img-7::before {
-content: url('img/advantages/advantage7.png');
-width: 56px;
-height: 56px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-
-
-.advantages-img-8::before {
-content: url('img/advantages/advantage8.png');
-width: 49px;
-height: 47px;
-position: absolute;
-top: 20px;
-left: 20px;
-}
-
-
-
-.advantages-img-9::before {
-	content: url('img/advantages/advantage9.png');
-	width: 45px;
-	height: 55px;
-	position: absolute;
-	top: 17px;
-	left: 20px;
+.advantages-img-icon {
+	margin: auto;
 }
 
 
 .advantages-row-text {
 	display: flex;
 	justify-content: space-around;
-	padding-left: 270px;
-	padding-right:  260px;
 	font-size: 25px;
 	color: #373F51;
 	margin-top: 20px;

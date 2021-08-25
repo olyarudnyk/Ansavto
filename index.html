@@ -23,7 +23,7 @@
 			</div>
 			<div class="header-top_soc-media">
 				<div class="header-top_viber">
-					<a href="#">
+					<a href="viber://chat/?number=%2B380674901818">
 						<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="viber-icon">
 							<path d="M19.5 39C30.2696 39 39 30.2696 39 19.5C39 8.73045 30.2696 0 19.5 0C8.73045 0 0 8.73045 0 19.5C0 30.2696 8.73045 39 19.5 39Z" fill="#30427E"/>
 							<path d="M29.8157 13.7051L29.8093 13.6794C29.2883 11.573 26.9393 9.31281 24.7821 8.8426L24.7578 8.83757C21.2687 8.17198 17.7309 8.17198 14.2425 8.83757L14.2175 8.8426C12.0611 9.31281 9.71199 11.5731 9.19029 13.6794L9.1845 13.7051C8.54039 16.6466 8.54039 19.6298 9.1845 22.5714L9.19029 22.5971C9.68982 24.6135 11.8638 26.77 13.9405 27.363V29.7142C13.9405 30.5653 14.9776 30.9832 15.5673 30.3691L17.9496 27.8928C18.4663 27.9217 18.9833 27.9378 19.5001 27.9378C21.2564 27.9378 23.0136 27.7717 24.7578 27.439L24.7821 27.4339C26.9392 26.9637 29.2882 24.7034 29.8092 22.5972L29.8156 22.5714C30.4598 19.6298 30.4598 16.6468 29.8157 13.7051ZM27.9304 22.1449C27.5825 23.5191 25.799 25.2275 24.3819 25.5431C22.5268 25.896 20.6568 26.0467 18.7888 25.995C18.7516 25.9939 18.7159 26.0084 18.6901 26.035C18.4249 26.3071 16.9507 27.8207 16.9507 27.8207L15.1006 29.7195C14.9653 29.8606 14.7277 29.7645 14.7277 29.5699V25.6748C14.7277 25.6104 14.6817 25.5558 14.6185 25.5433C14.6181 25.5431 14.6178 25.5431 14.6175 25.5431C13.2004 25.2274 11.4175 23.519 11.069 22.1448C10.4892 19.4859 10.4892 16.7905 11.069 14.1317C11.4175 12.7575 13.2004 11.0491 14.6175 10.7334C17.8575 10.1172 21.1426 10.1172 24.382 10.7334C25.7998 11.0491 27.5826 12.7575 27.9305 14.1317C28.5108 16.7906 28.5108 19.486 27.9304 22.1449Z" fill="white"/>
@@ -62,7 +62,7 @@
 			</div>
 			<div class="header-top_phone">
 				<div class="header-top_phone-number">
-					<a href="#"><b>+38 (067)</b> 490-18-18</a>
+					<a href="tel:+380674901818"><b>+38 (067)</b> 490-18-18</a>
 				</div>
 				<div class="header-top_callback">
 					<a href="#" class="callback-link">или мы можем перезвонить вам</a>
@@ -170,33 +170,132 @@
 			</section>
 		</div>
 		<div class="calc-title">
-			<div class="calc-title_item1">
-				<button class="calc-slider-btn calc-slider-btn1">
+				<button class="calc-slider-btn active" data-form="loan">
 				Кредит под залог авто
 				</button>
-			</div>
-			<div class="calc-title_item2">
-				<button class="calc-slider-btn calc-slider-btn2">
+				<button class="calc-slider-btn" data-form="leasing">
 				Авто в лизинг
 				</button>
-			</div>
 		</div>
 		<div class="calc-section">
-			<div class="calc-leasing">
-				<div class="calc-leasing_item calc-leasing_input1">
-					<label for="car-price">Стоимость авто, долларов США</label>
-					<br>
-					<input type="range" id="car-price" name="car-price" min="1" max="14" step="1">
+			<div class="calc-leasing active" data-form="loan">
+				<div class="calc-leasing_container">
+					<div class="calc-leasing_input calc-leasing_input1">
+							<label for="car-price">Стоимость авто, долларов США</label>
+							<br>
+							<div class="calc-input-container">
+								<input type="text" id="car-price" class="calc-input" placeholder="$ 4000">
+								<div class="input-range">
+									<div class="input-range-left"></div>
+									<div class="input-range-right"></div>
+									<div class="input-range-circle"></div>
+								</div>
+							</div>
+							<div class="input-price-value">
+								<div>$ 1000</div>
+								<div>$ 50 000</div>
+							</div>
+					</div>
+					<div class="calc-leasing_input calc-leasing_input2">
+						<label for="car-price">Какая сумма у вас есть? долларов США</label>
+						<br>
+						<div class="calc-input-container">
+							<input type="text" id="car-price" class="calc-input" placeholder="$ 1000">
+							<div class="input-range">
+								<div class="input-range-left"></div>
+								<div class="input-range-right"></div>
+								<div class="input-range-circle"></div>
+							</div>
+						</div>	
+					</div>
+					<div class="calc-leasing_input calc-leasing_input3">
+						<label for="car-price">Срок финансирования,месяцев</label>
+							<br>
+							<div class="calc-input-container">
+								<input type="text" id="car-price" class="calc-input" placeholder="24 месяца">
+								<div class="input-range">
+									<div class="input-range-left"></div>
+									<div class="input-range-right"></div>
+									<div class="input-range-circle"></div>
+								</div>
+							</div>
+							<div class="input-price-value">
+								<div>1 мес.</div>
+								<div>36 мес.</div>
+							</div>
+					</div>
+					<div class="calc-leasing__result">
+						<div class="calc-leasing__column">
+							<div class="calc-leasing__result-value">$ 6 100</div>
+							<div class="calc-leasing__result-label">Ежемесячный платеж</div>
+						</div>
+						<div class="calc-leasing__column">
+							<div class="calc-leasing__result-value calc-leasing__result-value2">24 мес.</div>
+							<div class="calc-leasing__result-label">Срок финансирования</div>
+						</div>
+					</div>
+					<div class="calc-leasing_bottom">
+						<button class="button calc-button">
+							Оставить заявку
+						</button>
+						<div class="calc-leasing_bottom-text">
+							Расчет предварительный и не является офертой
+						</div>
+					</div>
 				</div>
-				<div class="calc-leasing_item calc-leasing_input2">
-					<label for="money">Какая сумма у вас есть? долларов США</label>
-					<br>
-					<input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1">
-				</div>
-				<div class="calc-leasing_item calc-leasing_input3">
-					<label for="dayscount">Срок финансирования,месяцев</label>
-					<br>
-					<input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1">
+			</div>
+			<div class="calc-leasing calc-loan" data-form="leasing">
+				<div class="calc-leasing_container">
+					<div class="calc-leasing_input calc-leasing_input1">
+							<label for="car-price">Необходимая сумма? Долларов США</label>
+							<br>
+							<div class="calc-input-container">
+								<input type="text" id="car-price" class="calc-input" placeholder="$ 4000">
+								<div class="input-range">
+									<div class="input-range-left"></div>
+									<div class="input-range-right"></div>
+									<div class="input-range-circle"></div>
+								</div>
+							</div>
+							<div class="input-price-value">
+								<div>$ 1000</div>
+								<div>$ 50 000</div>
+							</div>
+					</div>
+					<div class="calc-leasing_input calc-leasing_input3">
+						<label for="car-price">Срок займа? (месяцев)</label>
+							<br>
+							<div class="calc-input-container">
+								<input type="text" id="car-price" class="calc-input" placeholder="24 месяца">
+								<div class="input-range">
+									<div class="input-range-left"></div>
+									<div class="input-range-right"></div>
+									<div class="input-range-circle"></div>
+								</div>
+							</div>
+							<div class="input-price-value">
+								<div>1 мес.</div>
+								<div>36 мес.</div>
+							</div>
+					</div>
+					<div class="calc-leasing__result">
+						<div class="calc-leasing__column">
+							<div class="calc-leasing__result-value">$ 6 100</div>
+							<div class="calc-leasing__result-label">Ежемесячный платеж</div>
+						</div>
+						<div class="calc-leasing__column">
+							<div class="calc-leasing__result-value calc-leasing__result-value2">24 мес.</div>
+							<div class="calc-leasing__result-label">Срок займа</div>
+						</div>
+					</div>
+					<div class="calc-leasing_bottom">
+						<button class="button calc-button">
+							Оставить заявку
+						</button>
+						<div class="calc-leasing_bottom-text">
+							Расчет предварительный и не является офертой
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -208,13 +307,19 @@
 			</div>
 			<div class="advantages-row-img">
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-1"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage1.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-2"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage2.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-3"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage3.png">
+					</div>
 				</div>
 			</div>
 			<div class="advantages-row-text">
@@ -232,13 +337,19 @@
 			</div>
 			<div class="advantages-row-img">
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-4"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage4.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-5"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage5.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-6"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage6.png">
+					</div>
 				</div>
 			</div>
 			<div class="advantages-row-text">
@@ -257,13 +368,19 @@
 			</div>
 			<div class="advantages-row-img">
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-7"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage7.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-8"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage8.png">
+					</div>
 				</div>
 				<div class="advantages-img-box">
-					<div class="advantages-img advantages-img-9"></div>
+					<div class="advantages-img">
+						<img src="img/advantages/advantage9.png">
+					</div>
 				</div>
 			</div>
 			<div class="advantages-row-text">
